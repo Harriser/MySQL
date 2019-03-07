@@ -1,3 +1,5 @@
+<center>![start](https://imgur.com/TLVtdYT.jpg)</center>
+
 ## SQL Windows 安装
 
 ### 1、配置系统环境变量
