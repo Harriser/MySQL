@@ -1,4 +1,15 @@
-<center>![start](https://imgur.com/TLVtdYT.jpg)</center>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents** *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [1、配置系统环境变量](#1配置系统环境变量)
+- [2、配置初始化的"my.ini"文件](#2配置初始化的myini文件)
+- [3、mysqld 服务配置](#3mysqld服务配置)
+  - [Found option 错误处理](#found-option-错误)
+- [4、安装"mysqld"服务](#4安装mysqld服务)
+  - ["myseql"服务存在错误](#myseql服务存在错误)
+- [5、启动"mysqlid"服务](#5启动mysqlid服务)
+- [Mysql数据库服务的关闭和重启](#mysql数据库服务的关闭和重启)
 
 ## SQL Windows 安装
 
@@ -36,7 +47,7 @@ default-character-set=utf8
 ```
 
 
-### 4、mysqld 服务配置
+### 3、mysqld服务配置
 - `mysqld --initialize --console`
 
 ```
@@ -55,10 +66,10 @@ mysqld: [ERROR] Fatal error in defaults handling. Program aborted!
 ![ini](https://imgur.com/SjRwuc3.jpg)
 
 
-### 5、安装"mysqld"服务
+### 4、安装"mysqld"服务
 - `mysqld --install mysqld`
 
-#### 错误处理
+#### "myseql"服务存在错误
 - The service already exists!
   - 服务已经存在
 
@@ -71,17 +82,17 @@ mysqld: [ERROR] Fatal error in defaults handling. Program aborted!
 ##### 解决方法B
 - 直接运行MySQL的服务
 
-### 6.启动"mysqlid"服务
+### 5、启动"mysqlid"服务
 - net start mysql
 
 ![start](https://imgur.com/TLVtdYT.jpg)
   - 此图代表启动成功
 
-<hr/ title="style">
-<style>
-img{
-  display:block;
-  width:95%;
-  margin:0 auto;
-}
-</style>
+### Mysql数据库服务的关闭和重启
+#### 如果未安装"mysql"服务，也可在命令行模式定位到mysql下的bin目录里，输入命令进行关闭或启动
+- 停止
+  - net stop mysql
+- 启动
+  - net start mysql
+
+<!-- END doctoc -->
