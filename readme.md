@@ -71,6 +71,7 @@ mysqld: [ERROR] Fatal error in defaults handling. Program aborted!
 
 ### 6.启动"mysqlid"服务
 - net start mysql
+
 ![start](https://imgur.com/TLVtdYT.jpg)
   - 此图代表启动成功
 
